@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--String Latitude;-->
+    <!--String Longtitude;-->
+    <!--String Tanggal;-->
+    <!--String Temperature;-->
+    <!--String IconSet;-->
+    <!--String humidity;-->
+    <!--String pressure;-->
+    <!--String sea_level;-->
+    <!--String grnd_level;-->
+    <!--Double temp_kf;-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/id_IconSet"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_noimage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/id_clouds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Kondisi Awal (Clouds)" />
+
+            <TextView
+                android:id="@+id/id_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Deskripsi Weather" />
+
+            <TextView
+                android:id="@+id/id_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m_10dp"
+        android:layout_marginTop="@dimen/m_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/id_Temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Example"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m_10dp"
+        android:layout_marginTop="@dimen/m_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/id_Latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Example"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m_10dp"
+        android:layout_marginTop="@dimen/m_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longtitude"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/id_Longtitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Example"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m_10dp"
+        android:layout_marginTop="@dimen/m_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/id_Tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Example"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m_10dp"
+        android:layout_marginTop="@dimen/m_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humidity"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/id_humidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Example"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m_10dp"
+        android:layout_marginTop="@dimen/m_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tekanan Udara"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/id_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Example"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m_10dp"
+        android:layout_marginTop="@dimen/m_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sea Level"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/id_sea_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Example"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m_10dp"
+        android:layout_marginTop="@dimen/m_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bawah Laut"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/id_grnd_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Example"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m_10dp"
+        android:layout_marginTop="@dimen/m_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tmp_kf"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/id_tmp_kf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Example"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>
