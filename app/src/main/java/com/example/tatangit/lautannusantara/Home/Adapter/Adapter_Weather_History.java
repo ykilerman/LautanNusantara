@@ -122,9 +122,9 @@ public class Adapter_Weather_History extends ArrayAdapter<ListItemHourly> {
 
         Log.d("Tampilkan-coy", "" + position);
         viewHolder.id_tanggal.setText(dataModel.getDtTxt());
-        viewHolder.id_temp.setText(Double.toString(dataModel.getMain().getTemp()));
-        viewHolder.id_temp_min.setText(Double.toString(dataModel.getMain().getTempMin()));
-        viewHolder.id_temp_max.setText(Double.toString(dataModel.getMain().getTempMax()));
+        viewHolder.id_temp.setText(Double.toString(Math.round(dataModel.getMain().getTemp()-273)));
+        viewHolder.id_temp_min.setText(Double.toString(Math.round(dataModel.getMain().getTempMin()-273)));
+        viewHolder.id_temp_max.setText(Double.toString(Math.round(dataModel.getMain().getTempMax()-273)));
         viewHolder.id_pressure.setText(Double.toString(dataModel.getMain().getPressure()));
         viewHolder.id_sea_level.setText(Double.toString(dataModel.getMain().getSeaLevel()));
         viewHolder.id_grnd_level.setText(Double.toString(dataModel.getMain().getGrndLevel()));

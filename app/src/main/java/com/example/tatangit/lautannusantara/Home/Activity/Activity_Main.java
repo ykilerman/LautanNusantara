@@ -121,7 +121,7 @@ public class Activity_Main extends AppCompatActivity {
             Slider
         */
         List<Slide> slideList = new ArrayList<>();
-        slideList.add(new Slide(0, "https://1.bp.blogspot.com/-Oi9joFk4yAQ/Ves8VWsqxJI/AAAAAAAAEB0/YVmz_ieSVnI/s1600/Kepulauan%2BBangka%2BBelitung%2B%2B%2BGoogle%2BMaps.png", getResources().getDimensionPixelSize(R.dimen.slider_image_corner)));
+        slideList.add(new Slide(0, "http://www.gosumatra.com/wp-content/uploads/2013/08/Pesona-Kecantikan-Pantai-Tanjung-Tinggi-Belitung.jpg", getResources().getDimensionPixelSize(R.dimen.slider_image_corner)));
         slideList.add(new Slide(1, "https://cdn1-production-images-kly.akamaized.net/0BgwGVvDH-mCo1AG1PcVB6olafw=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1965174/original/006224900_1520306009-Kepulauan_bangka.jpg", getResources().getDimensionPixelSize(R.dimen.slider_image_corner)));
         slideList.add(new Slide(2, "https://2.bp.blogspot.com/-cOrcLpjNZmU/WYls4KOyCFI/AAAAAAAABak/Dz5udhQWcQsI0VoDTC84b8GV8vqAB3uXQCLcBGAs/s1600/IMG_7624.JPG", getResources().getDimensionPixelSize(R.dimen.slider_image_corner)));
 

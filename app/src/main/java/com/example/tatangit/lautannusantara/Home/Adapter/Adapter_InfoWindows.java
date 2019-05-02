@@ -69,7 +69,7 @@ public class Adapter_InfoWindows implements GoogleMap.InfoWindowAdapter {
                 if (response.code() == 200) {
 
 
-                    id_temp_saat_inis = ""+response.body().getMain().getTemp();
+                    id_temp_saat_inis = ""+(Math.round(response.body().getMain().getTemp()-273.0));
                     id_kedalaman_lauts = ""+response.body().getMain().getSeaLevel();
                     id_bawah_lauts = ""+response.body().getMain().getGrndLevel();
                     id_bawah_lauts= ""+response.body().getMain().getPressure();
@@ -99,7 +99,6 @@ public class Adapter_InfoWindows implements GoogleMap.InfoWindowAdapter {
         id_tekanan_udara.setText(id_tekanan_udaras);
         id_kecepatan_angin.setText(id_kecepatan_angins);
         id_tempat.setText(id_tempats);
-
 
         Picasso.get().load(String.valueOf(id_icon_infowindowss)).placeholder(R.drawable.ic_noimage).fit().into(id_icon_infowindows, new com.squareup.picasso.Callback() {
             @Override
